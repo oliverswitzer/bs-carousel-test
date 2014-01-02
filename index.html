@@ -1,92 +1,113 @@
 <html>
 	<head>
 		<title>Bootstrap Carousel Test</title>
+		<link href="./bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 	</head>
 
 	<body>
-		<div class="container">
 			<nav class="navbar">
-				<a class= "brand" href="#">Project</a>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Dropdown</a></li>
-				</ul>
+				<div class="navbar-inner">
+					<a class= "brand" href="#">Project</a>
+					<ul class="nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Dropdown</a></li>
+					</ul>
+				</div>
 			</nav>
-		</div>
+		
 
-		<!-- carousel will go here -->
-		<div class="carousel">
-		</div>
+			<!-- carousel will go here -->
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
 
-		<!-- section with 140x140 images goes here -->
-		<div class="row">
-			<div class="span4">
-				<img class="img-circle" src="http://placekitten.com/140/140"/>
-				<h2>Heading</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+					<div class="active item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+				</div>
+
+				<!-- Carousel nav -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 			</div>
-			<div class="span4">
-				<img class="img-circle" src="http://placekitten.com/140/140"/>
-				<h2>Heading</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+
 			</div>
-			<div class="span4">
-				<img class="img-circle" src="http://placekitten.com/140/140"/>
-				<h2>Heading</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<!-- section with 140x140 images goes here -->
+			<div class="row">
+				<div class="span4">
+					<img class="img-circle" src="http://placekitten.com/140/140"/>
+					<h2>Heading</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="span4">
+					<img class="img-circle" src="http://placekitten.com/140/140"/>
+					<h2>Heading</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="span4">
+					<img class="img-circle" src="http://placekitten.com/140/140"/>
+					<h2>Heading</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
 			</div>
-		</div>
 
-<!-- 		blown up browser images go here
- -->
- 		<div class="row">
- 			<div class="span6">
- 				<h2 class="featurette-heading">Long header lorem ipsum fipsum bipsum poop</h2>
- 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 				tempor incididunt ut labore et dolore magna aliqua.</p>
- 			</div>
+	<!-- 		blown up browser images go here
+	 -->
+	 		<div class="row">
+	 			<div class="span6">
+	 				<h2 class="featurette-heading">Long header lorem ipsum fipsum bipsum poop</h2>
+	 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 				tempor incididunt ut labore et dolore magna aliqua.</p>
+	 			</div>
 
- 			<div class="span6">
- 				<img src="http://placekitten.com/500/500"/>
- 			</div>
- 		</div>
+	 			<div class="span6">
+	 				<img src="http://placekitten.com/500/500"/>
+	 			</div>
+	 		</div>
 
- 		<div class="row">
- 			<div class="span6">
- 				<h2 class="featurette-heading">Long header lorem ipsum fipsum bipsum poop</h2>
- 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 				tempor incididunt ut labore et dolore magna aliqua.</p>
- 			</div>
+	 		<div class="row">
+	 			<div class="span6">
+	 				<h2 class="featurette-heading">Long header lorem ipsum fipsum bipsum poop</h2>
+	 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 				tempor incididunt ut labore et dolore magna aliqua.</p>
+	 			</div>
 
- 			<div class="span6">
- 				<img src="http://placekitten.com/500/500"/>
- 			</div>
- 		</div>
+	 			<div class="span6">
+	 				<img src="http://placekitten.com/500/500"/>
+	 			</div>
+	 		</div>
 
- 		<div class="row">
- 			<div class="span6">
- 				<h2 class="featurette-heading">Long header lorem ipsum fipsum bipsum poop</h2>
- 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 				tempor incididunt ut labore et dolore magna aliqua.</p>
- 			</div>
+	 		<div class="row">
+	 			<div class="span6">
+	 				<h2 class="featurette-heading">Long header lorem ipsum fipsum bipsum poop</h2>
+	 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 				tempor incididunt ut labore et dolore magna aliqua.</p>
+	 			</div>
 
- 			<div class="span6">
- 				<img src="http://placekitten.com/500/500"/>
- 			</div>
- 		</div>
+	 			<div class="span6">
+	 				<img src="http://placekitten.com/500/500"/>
+	 			</div>
+	 		</div>
 
- 		<footer>
- 			(c) 2013 Company, Inc.
- 			<ul>
- 				<li><a href="#">Privacy</a></li>
- 				<li><a href="#">Terms</a></li>
- 			</ul>
+	 		<footer>
+	 			(c) 2013 Company, Inc.
+	 			<ul>
+	 				<li><a href="#">Privacy</a></li>
+	 				<li><a href="#">Terms</a></li>
+	 			</ul>
 
- 			<a href="#">Back to top</a>
- 		</footer>
-
+	 			<a href="#">Back to top</a>
+	 		</footer>
 
 	</body>
 </html>
